@@ -2,11 +2,11 @@
 body {
     /* feel free to update these css variables for a quick theme */
     
-    --color1: white;
-    --color2: white;
-    --color3: white;
-    --color4: white;
-    --color5: white;
+    --color1: rgb(35, 36, 57);
+    --color2: rgb(200, 34, 255);
+    --color3: rgb(120, 68, 255);
+    --color4: rgb(130, 194, 255);
+    --color5: rgb(34, 106, 255);
     
     /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
         
@@ -37,11 +37,12 @@ main {
     justify-content: center;
     align-items: center;
     margin-bottom: calc(var(--footer-height));
+    background-image: image("../assets/city.jpg");
 }
 
-section {
-    background-color: var(--color5);
-    max-width: 80%;
+.main-section {
+    background-color: var(--color1);
+    max-width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,13 +51,18 @@ section {
     padding-bottom: var(--gutter);
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
-    border: solid 2px var(--color1);
+    border: solid 2px var(--color3);
+    border-radius: 10px;
+}
+
+section .img {
+    align-items: center;
 }
 
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color1);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -73,10 +79,13 @@ h2 {
 
 header img {
     height: var(--header-height);
+    color: var(--color5);
 }
 
 p {
     margin: var(--gutter);
+    color: var(--color2);
+    font-family: 'VT323', monospace;
 }
   
 footer {
