@@ -107,16 +107,15 @@ Render dead Mice differently, and disable clicking on them
 
 # Rubric
 
-- Users see HP and two default Mice	(2)
-Users can add a new Mice with default HP and name	(2)
+- Users see HP and two default Mice	(2) X
+Users can add a new Mice with default HP and name	(2)X
 - Mice click handler	(6)
-  - Uses Math.random() function to determine hits	
-  - Alerts user whether they hit the Mice or not and updates HP	
-  - Alerts user whether the Mice hit them or not and updates HP	
-- Show number of vanquished Mice	1
-- Display Mice differently and disable clicking when defeated	1
+  - Uses Math.random() function to determine hits	X
+ - Alerts user whether the Mice hit them or not and updates HP x
+- Show number of vanquished Mice	1 x
+- Display Mice differently and disable clicking when defeated	1 
 - Disable all functionality when the game is over	2
 
 Functions	
-- PURE: `renderMice(mice)` : return DOM node`	2
-- IMPURE: `displayMice()` : clears DOM and appends Mice data to Mice list DOM node`	2
+- PURE: `renderOpponent(mice)` : return DOM node`	2 x
+- IMPURE: `displayMice()` : clears DOM and appends Mice data to Mice list DOM node`	2 x
