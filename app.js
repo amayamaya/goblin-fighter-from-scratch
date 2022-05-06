@@ -1,18 +1,18 @@
 // import functions
-
+import { renderOpponent } from './utils.js';
 // grab dom elements
 // const recruitedMiceEl = document.querySelector('#recruited-mice');
 // const hutzpahEl = document.querySelector('#trainer-hutzpah');
 // const trainerImgEl = document.querySelector('#trainer-img');
 const form = document.querySelector('form');
-const opponentsListEl = document.querySelector('opponents');
+const opponentsListEl = document.querySelector('.opponents');
 
-// let
+//let state
 // let recruitedMice = 0;
-// let hutzpah = 9;
+let hutzpah = 9;
 let opponents = [
-    { name: 'Fitty Spent', hp: 5 },
-    { name: 'Blok Chainz', hp: 2 },
+    { name: 'Fitty Spent', hutzpah: 5 },
+    { name: 'Blok Chainz', hutzpah: 2 },
 ];
 
 // set event listeners New Opponents Form!
@@ -27,7 +27,7 @@ form.addEventListener('submit', (e) => {
     // use user input to update state
     const newOpponent = {
         name: streetName,
-        hp: Math.ceil(Math.random() * 2),
+        hutzpah: Math.ceil(Math.random() * 5),
     };
 
     // update DOM - add object to array of opponents in state
@@ -42,9 +42,29 @@ function displayOpponents() {
     opponentsListEl.textContent = '';
 
     // // loop through opponents
-    // for (let opponent of opponents) {
+    for (let opponent of opponents) {
     //     //render new opponent element for each item
-    //     const OpponentEl = renderOpponent(opponent);
+        const OpponentEl = renderOpponent(opponent);
         //append element to HTML
 
+        OpponentEl.addEventListener('click', () => {
+            opponentClickHandler(opponent);
+            // console.log('clicked a mouse');
+        });
+      
+        opponentsListEl.append(OpponentEl);
+    }
 }
+
+function opponentClickHandler(opponent) {
+    // if opponent hutzpah is 0, return 
+    if (opponent.hutzpah === 0) return;
+    // if trainer hutzpah is 0, return
+    if (hutzpah === 0) return;
+
+    // randomly decide if player hit the opponent
+    // const trainerHit = Math.random(Math.ceil());
+    // generate a random number between 1 and 5 
+}
+
+displayOpponents();

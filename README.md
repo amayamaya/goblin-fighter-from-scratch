@@ -62,8 +62,8 @@ Mice objects will look like this:
 -   [x] Set up your HTML with your defeatedMice span, your playerHP span, your form for adding new Mice
 -   [x] Add your state variables in app.js
 -   [x] Add event listener for your new Mice form
--   [ ] TDD your `renderOpponents` function (TDD optional but helpful) -- should return an HTML element with the Mice's name and hp
--   [ ] Add `displayOpponents` function which calls `renderOpponents` for each Mice in your list of Mice
+-   [X] TDD your `renderOpponents` function (TDD optional but helpful) -- should return an HTML element with the Mice's name and hp
+-   [x] Add `displayOpponents` function which calls `renderOpponents` for each Mice in your list of Mice
 
 _ You know you're done here when you can add new Mice to the page_
 
