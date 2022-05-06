@@ -59,11 +59,11 @@ Mice objects will look like this:
 
 1. Get everything done that you've done before -- i.e. stuff that looks like yesterday's labs
 
--   [ ] Set up your HTML with your defeatedMice span, your playerHP span, your form for adding new Mice
--   [ ] Add your state variables in app.js
--   [ ] Add event listener for your new Mice form
--   [ ] TDD your `renderMice` function (TDD optional but helpful) -- should return an HTML element with the Mice's name and hp
--   [ ] Add `displayMice` function which calls `renderMice` for each Mice in your list of Mice
+-   [x] Set up your HTML with your defeatedMice span, your playerHP span, your form for adding new Mice
+-   [x] Add your state variables in app.js
+-   [x] Add event listener for your new Mice form
+-   [ ] TDD your `renderOpponents` function (TDD optional but helpful) -- should return an HTML element with the Mice's name and hp
+-   [ ] Add `displayOpponents` function which calls `renderOpponents` for each Mice in your list of Mice
 
 _ You know you're done here when you can add new Mice to the page_
 
@@ -72,8 +72,8 @@ _ You know you're done here when you can add new Mice to the page_
 ### Mice Click Handler Logic
 
 js
-// if Mice's hp is 0, return
-// if(Mice.hp === 0) return;
+// if Opponents' hp is 0, return
+// if(Opponents.hp === 0) return;
 
 // if player hp is 0, return
 

@@ -95,6 +95,7 @@ footer {
     background-color: var(--color3);
     box-shadow: var(--shadow);
     font-family: 'VT323', monospace;
+    color: var(--color4);
 }
 
 button {
@@ -104,14 +105,14 @@ button {
     border: none;
 }
 
-input[type=text] {
+input[type='text'] {
     background-color: var(--color1);
     color: var(--color3);
     border: solid 2px var(--color2);
     border-radius: 4px;
 }
 
-input[type=text]:focus {
+input[type='text']:focus {
     background-color: var(--color1);
     color: var(--color5);
     border-color: var(--color5);
