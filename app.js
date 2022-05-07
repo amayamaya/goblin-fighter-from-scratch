@@ -54,7 +54,7 @@ function displayOpponents() {
 
         OpponentEl.addEventListener('click', () => {
             opponentClickHandler(opponent);
-            console.log('clicked a mouse');
+            // console.log('clicked a mouse');
         });
         opponentsListEl.append(OpponentEl);
 
@@ -76,7 +76,7 @@ function opponentClickHandler(opponent) {
         opponent.hutzpah--;
         displayOpponents();
         // alert user that they hit the goblin
-        console.log(opponent);
+        // console.log(opponent);
         alert(`You got ${opponent.streetName} spinnin! Stay focussed!`);
         // if opponent hutzpah is 0 -- increment recruits!
         if (opponent.hutzpah === 0) {
